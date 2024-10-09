@@ -27,7 +27,7 @@ function Signup() {
             return handleError('Please fill all fields and select a user type')
         }
         try {
-            const url = `http://localhost:8080/auth/signup`;
+            const url = `https://v-labs.vercel.app/auth/signup`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
